@@ -1,0 +1,281 @@
+/*Fonts Google*/
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,300;0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
+/*Paleta de Cores*/
+:root{
+    --cor1: #DBF227;
+    --cor2: #042940;
+    --cor3: #0D0D0DD0;
+    --cor4: #EBF21B;
+    --cor5: #C2F216;
+}
+
+/*Reset CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Configuração de fonte para todo HTML*/
+html{
+    font-family: 'Poppins', sans-serif; /*Fonte Poppins para todas as letras do HTML*/
+}
+
+/*Config Header - Logo - Navbar*/
+header{
+    width: 100%; /*Largura de 100% da tela*/
+    background-color: var(--cor3); /*Cor de fundo da header*/
+    padding: 20px; /*Espaçamento todas as direções dentro da borda*/
+}
+
+.container-header{
+    display: flex; /*Deixar flexivel*/
+    margin: 0 auto; /*Centralizar item*/
+    max-width: 1080px; /*Tamanho máximo da tela*/
+    justify-content: center; /*Centralizar pelo eixo vertical*/
+}
+
+.header-logo{
+    width: 25%; /*Logo vai usar 25% da largura*/
+    color: var(--cor1); /*Cor da fonte da logo*/
+    font-family: 'Saira', sans-serif; /*Fonte apenas da logo*/
+    font-weight: 600; /*Espessura da fonte da logo*/
+    font-size: xx-large; /*Tamanho da fonte da logo*/
+    cursor: pointer; /*Trocar seta do mouse para mão quando passar pelo logo*/
+}   
+
+.header-nav{
+    display: flex; /*Deixar flexível*/
+    width: 50%; /*Menu vai usar 25% da largura*/
+    align-items: center; /*Alinhar itens ao centro do eixo horizontal*/
+    justify-content: center; /*Alinhar itens ao centro do eixo vertical*/
+}
+
+.header-nav a{
+    text-decoration: none; /*Tirar o underline dos links do menu*/
+    color: var(--cor1); /*Cor da fonte do menu*/
+    padding: 5px; /*Espaçamento à direita dentro da borda de todos os links do menu*/
+    font-size: 15px; /*Tamanho da fonte da logo*/
+    position: relative;
+}
+
+.header-nav a::after{
+    content: " "; /*Definar conteúdo vazio*/
+    width: 0%;
+    height: 4px;
+    background-color: #C2F216;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s ease-in-out;
+}
+
+.header-nav a:hover::after{
+    width: 100%;
+}
+
+
+/*Configuração Main*/
+.container-main{
+    width: 100%;
+}
+
+.main-slide{
+    background-image: url('img/callcenter.png');
+    background-size: cover;
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide{
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.slide h2{
+    color: var(--cor3);
+    font-size: xx-large;
+}
+
+.slide-form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor3);
+    width: 250px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+    border-radius: 15px;
+    color: var(--cor1);
+}
+
+.slide-form form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+    border: none;
+}
+
+input{
+    height: 25px;
+    margin-top: 5px;
+}
+.slide-form button{
+   background-color: var(--cor1);
+   border: none;
+   padding: 5px;
+   width: 100%;
+   margin-top: 5px;
+}
+
+.container-main h1{
+    text-align: center;
+}
+
+.main-servicos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.main-servicos h1{
+    text-align: center;
+    width: 100%;
+}
+
+.main-servicos-cards{
+    display: inline-block;
+    justify-content: space-evenly;
+    overflow: hidden;
+    width: 250px;
+    height: 400px;
+    margin: 30px;
+    padding: 10px;
+}
+
+.cards-img{
+    margin-bottom: 10px;
+}
+
+.cards-img img{
+    display: flex;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.cards-titulo{
+    color: rgb(63, 63, 63);
+    text-align: center;
+}
+
+.cards-descricao{
+    color: rgb(63, 63, 63);
+    height: 45%;
+    margin-top: 5px;
+}
+
+.cards-footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor1);
+    text-align: right;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.cards-footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.main-maps{
+    background-color: var(--cor3);
+    color: var(--cor1);
+    text-align: center;
+}
+
+/*Configuração Footer*/
+footer{
+    width: 100%; /*Largura de 100% da tela*/
+    background-color: #093F68; /*Cor de fundo da header*/
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.container-footer{
+    display: flex;/*Deixar flexivel*/
+    margin: 0 auto; /*Centralizar item*/
+    max-width: 1080px; /*Tamanho máximo da tela*/
+    justify-content: space-around; /*Centralizar pelo eixo principal*/
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.footer-contato {
+    width: 33%;
+    text-decoration: none;
+    color: var(--cor1);
+    padding-right: 15px;
+    font-size: large;
+}
+
+.footer-contato a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-menu{
+    width: 33%;
+    text-decoration: none;
+    color: var(--cor1);
+    padding-right: 15px;
+    font-size: large;
+}
+
+.footer-menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-localizacao{
+    width: 33%;
+    text-decoration: none;
+    color: var(--cor1);
+    padding-right: 15px;
+    font-size: large;
+}
+
+.footer-localizacao p{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-localizacao span{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-fino {
+    color: var(--cor1);
+    text-align: center;
+    margin-top: 15px;
+}
+
+.footer-fino a {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
