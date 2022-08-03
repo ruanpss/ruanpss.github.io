@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ae132c5cd3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contato.php">
+    <title>TechSegur - Segurança Eletrônica, Energia Fotovoltaica e Telecomunicação</title>
+</head>
+<body>
+    <header>
+        <div class="container-header"><!--Caixa de todo o header-->
+            <div class="header-logo"><!--Caixa apenas do logo-->
+                <span>TECHSEGUR</span>
+            </div>
+            <div class="header-nav"><!--Caixa apenas navbar-->
+                <nav>
+                    <a href="#">serviços</a>
+                    <a href="#">sobre nós</a>
+                    <a href="#">contato</a>
+                    <a href="#">solicitar orçamento</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-main">
+            <!--Slide Topo-->
+            <div class="main-slide">
+                <div class="slide">
+                    <h2>Temos a solução em segurança eletrônica </br> para sua casa ou negócio</h2>
+                </div>
+                <div class="slide-form">
+                    <h3>solicite um orçamento</h3>
+                    <form action="<? $PHP_SELF; ?>" method="POST">
+                        <label for="nome"><input type="text" name="nome" id="nome" placeholder="Nome"></label>
+                        <label for="email"><input type="email" name="email" id="email" placeholder="E-mail"></label>
+                        <label for="nome"><input type="tel" name="telefone" id="telefone" placeholder="DDD + Telefone"></label>
+                        <button type="submit" name="BTEnvia">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <!--Título serviços-->
+            <div class="main-servicos">
+                <h1>serviços</h1>
+                <!--Card CFTV-->
+                <div class="main-servicos-cards">
+                    <div class="cards-img">
+                        <img src="img/camera.jpeg" alt="Serviços de câmeras CFTV">
+                    </div>
+                    <div class="cards-titulo">
+                        <h3>CFTV</h3>
+                    </div>
+                    <div class="cards-descricao">
+                        <p>Venda e instalação de sistemas de CFTV analógicos e IP’s com uso dos melhores equipamentos do mercado.</p>
+                    </div>
+                    <div class="cards-footer">
+                        <a href="#">saiba mais</a>
+                    </div>
+                </div>
+                <!--Card Antena KU-->
+                <div class="main-servicos-cards">
+                    <div class="cards-img">
+                        <img src="img/antena.jpg" alt="Serviços de Antena KU">
+                    </div>
+                    <div class="cards-titulo">
+                        <h3>Antena KU</h3>
+                    </div>
+                    <div class="cards-descricao">
+                        <p>Venda, instalação e migração do novo sistema de Banda KU do mercado, mais de 42 canais liberados.</p>
+                    </div>
+                    <div class="cards-footer">
+                        <a href="#">saiba mais</a>
+                    </div>
+                </div>
+                <!--Card Interfonia-->
+                <div class="main-servicos-cards">
+                    <div class="cards-img">
+                        <img src="img/interfonia.jpg" alt="Serviços de Interfonia">
+                    </div>
+                    <div class="cards-titulo">
+                        <h3>Interfonia</h3>
+                    </div>
+                    <div class="cards-descricao">
+                        <p>Venda, instalação e manutenção de Interfonia IP, com reconhecimento facil e abertura automática de portas.</p>
+                    </div>
+                    <div class="cards-footer">
+                        <a href="#">saiba mais</a>
+                    </div>
+                </div>
+                <!--Card Portão Eletrônico-->
+                <div class="main-servicos-cards">
+                    <div class="cards-img">
+                        <img src="img/motor.jpeg" alt="Serviços de Portão Eletrônico">
+                    </div>
+                    <div class="cards-titulo">
+                        <h3>Portão Automático</h3>
+                    </div>
+                    <div class="cards-descricao">
+                        <p>Venda, instalação e manutenção de automatizadores de portão, mais modernos do mercado e com rápida abertura.</p>
+                    </div>
+                    <div class="cards-footer">
+                        <a href="#">saiba mais</a>
+                    </div>
+                </div>
+                <!--Card Assistência Técnica-->
+                <div class="main-servicos-cards">
+                    <div class="cards-img">
+                        <img src="img/motor.jpeg" alt="Serviços de Portão Eletrônico">
+                    </div>
+                    <div class="cards-titulo">
+                        <h3>Assistência Técnica</h3>
+                    </div>
+                    <div class="cards-descricao">
+                        <p>Assistencia técnica especializada e rápida, 7 dias por semana e preços que cabem no seu bolso.</p>
+                    </div>
+                    <div class="cards-footer">
+                        <a href="#">saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-maps">
+                <h1>área de atendimento</h1>
+                <p>atendemos em todo estado do rio de janeiro</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1893240.715207445!2d-44.04501714191174!3d-22.05970080375544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x981894cae28ac3%3A0x349c31ac10583d0!2sRio%20de%20Janeiro!5e0!3m2!1spt-BR!2sbr!4v1658620362881!5m2!1spt-BR!2sbr" width="100%" height="auto" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="footer-contato">
+                <h3>contato</h3>
+                <p><a href="tel:+5522992922559">(22)9.99292-2559</a></p>
+                <p><a href="mailto:contato@techsegur.com.br">contato@techsegur.com.br</a></p>
+                <p><a href="#">suporte 24h</a></p>
+            </div>
+            <div class="footer-menu">
+                <h3>menu</h3>
+                <ul>
+                    <li><a href="http://#">serviços</a></li>
+                    <li><a href="http://#">sobre nós</a></li>
+                    <li><a href="http://#">solicitar orçamento</a></li>
+                    <li><a href="http://#">trabalhe conosco</a></li>
+                    <li><a href="http://#">suporter 24h</a></li>
+                </ul>
+            </div>
+            <div class="footer-localizacao">
+                <h3>endereço</h3>
+                <p>av. joaquim nogueira, 448</p>
+                <p>cabo frio - rj</p>
+                <span>atendemos em todo estado do rio de janeiro</span>
+            </div>
+        </div>
+        <div class="footer-fino">
+            <p>TECHSEGUR - todos os direitos reservados. | desenvolvido por <a href="http://instagram.com/ruanp0" target="_blank">rupass</a></p>
+        </div>
+    </footer>
+</body>
+</html>
